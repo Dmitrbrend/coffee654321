@@ -241,12 +241,37 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
+    flex-direction: column;
   }
   
   .bean-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+  }
+
+  .rating-panel {
+    display: flex;
+    align-items: center;
+    padding-left:  98px;
+    padding-bottom: 20px;
+  }
+
+  .star {
+    font-size: 24px;
+    color: #ddd; /* Серый цвет для неактивных звезд */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Плавно меняем цвет при наведении */
+  }
+
+  .star:hover,
+  .star.active {
+    color: #ffc107; /* Желтый цвет для активных звезд */
+  }
+
+  .rating-value {
+    margin-left: 10px;
+    font-size: 16px;
   }
 
   .slider-container {
