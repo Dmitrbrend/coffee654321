@@ -1,0 +1,291 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .logo img{
+    max-width: 50px;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 10px ;
+    padding-right: 10px ;
+  }
+  .logo{
+    display: flex;
+  }
+
+ 
+  .head{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-contact {
+    
+    display: flex; /* Выравниваем по центру */
+    flex-direction: column;
+    margin-top: 10px; /* Отступ сверху */
+    text-align: left;
+  }
+  .header-contact a{
+    padding-bottom: 10px;
+  }
+  .header-contact a {
+    margin: 0 10px; /* Отступ между ссылками */
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+  }
+  
+  .header-contact i {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+  }
+
+
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #fff;
+
+    background-image: url(img/задний\ фон.jpg); /* Замените 'path/to/your/image.jpg' на путь к вашей картинке */
+    background-size: cover; /* Заполняет фон картинкой, растягивая ее */
+    background-position: center; /* Центрирует картинку */
+    background-repeat: no-repeat; /* Убирает повторение картинки */
+    width: auto; /* Ширина блока */
+    height: 200px; /* Высота блока */
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .menu {
+    padding: 40px 0;
+    background-color: #f0e6dc; /* Светло-коричневый фон */
+  }
+  
+  .coffee-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .coffee-item {
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .coffee-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .coffee-item h3 {
+    margin-top: 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social li {
+    margin: 0 10px;
+  }
+  
+  .social a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social i {
+    font-size: 1.5em;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .exclusive-coffee {
+    padding: 40px 0;
+    background-color: #f0e6dc;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    /* Сделайте скроллинг горизонтальным */
+  }
+  
+  .slide {
+    width: 250px; /* Ширина каждой карточки */
+    min-height: 200px;
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .beans {
+    padding: 40px 0;
+    background-color: #fff;
+  }
+  
+  .bean-items {
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+
+  }
+  
+  .bean-item {
+    width: 300px; /* Две карточки в строке */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .bean-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .slider-container {
+    position: relative;
+    /* Для позиционирования счетчика и кнопок */
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    /* Сделайте скроллинг горизонтальным */
+  }
+  
+  .slide {
+    width: 250px; /* Ширина каждой карточки */
+    min-height: 200px;
+    margin-right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-counter {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+  
+  .prev, .next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    margin-right: 10px;
+  }
