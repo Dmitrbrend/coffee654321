@@ -168,6 +168,12 @@ body {
   .about {
     padding: 40px 0;
     background-color: #fff;
+    background-image: url(""); /* Пути к изображениям */
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  width: auto;
+  height: 350px;
   }
   
   .social {
@@ -209,6 +215,7 @@ body {
 
    .text-slid p{
     text-align: left;
+    padding-bottom: 20px;
    }
 
    .text-slid h3{
@@ -298,4 +305,20 @@ body {
   
   .prev {
     margin-right: 10px;
+  }
+
+  .order-button {
+    background-color: #333; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Отступы от текста */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    cursor: pointer; /* Изменяем курсор на указатель */
+    transition: background-color 0.3s ease; /* Плавно меняем цвет при наведении */
+  }
+  
+  .order-button:hover {
+    background-color: #555; /* Цвет фона при наведении */
   }
