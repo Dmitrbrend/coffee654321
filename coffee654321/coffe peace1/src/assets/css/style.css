@@ -21,6 +21,8 @@ header {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  font-family: 'Montserrat', serif;
+
 }
 
 nav ul {
@@ -37,6 +39,7 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Montserrat', serif;
 }
 
 .logo img {
@@ -113,6 +116,8 @@ nav a {
 .hero-text {
   flex: 1;
   padding-right: 30px;
+  font-family: 'Montserrat', serif;
+
 }
 
 .hero-text h2 {
@@ -146,6 +151,7 @@ nav a {
   padding: 40px 0;
   background-color: #e7dfd6;
   /* Светло-коричневый фон */
+  font-family: 'Montserrat', serif;
 }
 
 .coffee-items {
@@ -188,6 +194,8 @@ nav a {
   background-repeat: no-repeat, no-repeat;
   width: auto;
   height: 350px;
+  font-family: 'Montserrat', serif;
+
 }
 
 .social {
@@ -217,17 +225,23 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  font-family: 'Montserrat', serif;
+
 }
 
 .exclusive-coffee {
   padding: 40px 0;
   background-color: #f0e6dc;
+  font-family: 'Montserrat', serif;
+
 }
 
 
 .beans {
   padding: 40px 0;
   background-color: #fff;
+  font-family: 'Montserrat', serif;
+
 }
 
 .bean-items {
