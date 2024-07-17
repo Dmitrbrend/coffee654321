@@ -26,8 +26,62 @@ window.addEventListener("DOMContentLoaded", () => {
 
   bindModal(".btn", ".modal");
 
-  //slider
+  //Добовление карточек экслюзивного меню 
 
+  class MenuCard {
+    constructor(src, alt, title, cost, price, parentSelector, ...classes) {
+        this.src = src;
+        this.alt = alt;
+        this.title = title;
+        this.price = price;
+        this.cost = cost;
+        this.classes = classes;
+        this.parent = document.querySelector(parentSelector);
+    }
+
+    render() {
+        const element = document.createElement('div');
+
+        if (this.classes.length === 0) {
+            this.classes = "menu__item";
+            element.classList.add(this.classes);
+        } else {
+            this.classes.forEach(className => element.classList.add(className));
+        }
+
+        element.innerHTML = `
+      <div class="slide">
+        <div class="slide-img">
+        <img
+          src="${this.src}"
+          alt="Эксклюзивный кофе 3"
+        />
+      </div>
+      <div class="text-slid">
+        <h3>${this.title}</h3>
+        <p>
+         ${this.price}
+        </p>
+        <button class="order-button">Пред заказ ${this.cost}</button>
+      </div>
+     </div>
+    </div>
+        `;
+        this.parent.append(element);
+    }
+}
+
+getResource('http://localhost:3000/menu')
+    .then(data => {
+        data.forEach(({img, altimg, title, cost, price}) => {
+            new MenuCard(img, altimg, title, cost, price, ".exclusive-coffee .container .slider-container .slider").render();
+        });
+    });
+   
+//slider
+
+
+    
   let slideIndex = 1;
   const slides = document.querySelectorAll(".slide"),
     prev = document.querySelector(".offer__slider-prev"),

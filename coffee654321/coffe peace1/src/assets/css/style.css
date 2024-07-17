@@ -102,7 +102,7 @@ nav a {
   padding: 40px 0;
   background-color: #dacfcf;
 
-  background-image: url('./assets/img/задний фон.jpg'), url('./assets/img/104894 (1).png');
+  background-image: url('../img/background1.jpg'), url('../img/background2.png');
   /* Пути к изображениям */
   background-size: cover, cover;
   background-position: center, center;
