@@ -71,12 +71,12 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
-	getResource('http://localhost:3000/menu')
-		.then(data => {
-			data.forEach(({ img, altimg, title, cost, price }) => {
-				new MenuCard(img, altimg, title, cost, price, ".exclusive-coffee .container .slider-container .slider").render();
-			});
-		});
+	// getResource('http://localhost:3000/menu')
+	// 	.then(data => {
+	// 		data.forEach(({ img, altimg, title, cost, price }) => {
+	// 			new MenuCard(img, altimg, title, cost, price, ".exclusive-coffee .container .slider-container .slider").render();
+	// 		});
+	// 	});
 
 	//slider
 
